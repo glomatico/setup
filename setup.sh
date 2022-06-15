@@ -58,7 +58,7 @@ sudo snap install code --classic
 sudo snap install postman
 
 #Create alunoinfo User
-sudo useradd -s /bin/bash -d /home/alunoinfo/ -m alunoinfo
+sudo useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo 'alunoinfo' | sudo passwd --stdin alunoinfo
 
 #Dock setup
