@@ -7,19 +7,22 @@ sudo apt-get install ./google-chrome-stable_current_amd64.deb
 
 #Java
 wget https://download.bell-sw.com/java/17.0.3.1+2/bellsoft-jdk17.0.3.1+2-linux-amd64-full.deb
-apt-get install ./bellsoft-jdk17.0.3.1+2-linux-amd64-full.deb
+apt install ./bellsoft-jdk17.0.3.1+2-linux-amd64-full.deb
 
 #Google Chrome Guest
 wget https://glomatico.neocities.org/chrome.txt" -O "/usr/share/applications/google-chrome.desktop
 
 #VirtualBox
-apt-get install virtualbox
+apt install virtualbox
 
 #VLC
-apt-get install vlc
+apt install vlc
 
 #Thonny
-apt-get install thonny
+apt install thonny
+
+#Libre Office
+apt install libreoffice
 
 #Eclipse
 wget https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2022-03/R/eclipse-java-2022-03-R-linux-gtk-x86_64.tar.gz
