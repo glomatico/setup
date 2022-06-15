@@ -28,13 +28,13 @@ sudo apt install -y libreoffice
 wget https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2022-03/R/eclipse-java-2022-03-R-linux-gtk-x86_64.tar.gz
 tar -zxvf eclipse-java-2022-03-R-linux-gtk-x86_64.tar.gz -C /opt/
 wget https://dl2.macupdate.com/images/icons128/11662.png -O /opt/eclipse/eclipse.png
-sudo echo -e '[Desktop Entry]\n Version=1.0\n Name=Eclipse\n Exec=/opt/eclipse/eclipse\n Icon=/opt/eclipse/eclipse.png\n Type=Application\n Categories=Application'
+sudo echo '[Desktop Entry]\nVersion=1.0\nName=Eclipse\nExec=/opt/eclipse/eclipse\nIcon=/opt/eclipse/eclipse.png\nType=Application\nCategories=Application\n' > /usr/share/applications/brmodelo.desktop
 
 #brModelo
 sudo mkdir /opt/brmodelo
 sudo wget https://github.com/chcandido/brModelo/releases/download/3.31/brModelo.jar -O /opt/brmodelo/brmodelo.jar
 sudo wget https://github.com/chcandido/brModelo/raw/master/src/imagens/icone.png -O /opt/brmodelo/brmodelo.png
-sudo echo -e '[Desktop Entry]\n Version=1.0\n Name=brModelo\n Exec=java -jar /opt/brmodelo/brmodelo.jar\n Icon=/opt/brmodelo/brmodelo.png\n Type=Application\n Categories=Application'
+sudo echo '[Desktop Entry]\nVersion=1.0\nName=brModelo\nExec=java -jar /opt/brmodelo/brmodelo.jar\nIcon=/opt/brmodelo/brmodelo.png\nType=Application\nCategories=Application\n' > /usr/share/applications/brmodelo.desktop
 
 #PyCharm
 sudo snap install pycharm-community --classic
