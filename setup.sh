@@ -26,8 +26,8 @@ sudo apt install -y libreoffice
 
 #Eclipse
 wget https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2022-03/R/eclipse-java-2022-03-R-linux-gtk-x86_64.tar.gz
-tar -zxvf eclipse-java-2022-03-R-linux-gtk-x86_64.tar.gz -C /opt/
-wget https://dl2.macupdate.com/images/icons128/11662.png -O /opt/eclipse/eclipse.png
+sudo tar -zxvf eclipse-java-2022-03-R-linux-gtk-x86_64.tar.gz -C /opt/
+sudo wget https://dl2.macupdate.com/images/icons128/11662.png -O /opt/eclipse/eclipse.png
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/eclipse.desktop -O /usr/share/applications/eclipse.desktop
 
 #brModelo
