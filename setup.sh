@@ -57,5 +57,11 @@ sudo snap install code --classic
 #Postman
 sudo snap install postman
 
-#Aluno Info
-sudo useradd alunoinfo
+#Create alunoinfo User
+sudo useradd -s /bin/bash -d /home/alunoinfo/ -m alunoinfo
+echo 'alunoinfo' | sudo passwd --stdin alunoinfo
+
+#Dock setup
+echo 'alunoinfo' | sudo -S -u alunoinfo 'gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false'
+echo 'alunoinfo' | sudo -S -u alunoinfo 'set org.gnome.shell.extensions.dash-to-dock show-trash false'
+echo 'alunoinfo' | sudo -S -u alunoinfo 'set org.gnome.shell.extensions.dash-to-dock show-favorites false'
