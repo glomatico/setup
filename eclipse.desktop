@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
-Name=Eclipse
+Name=eclipse
 Exec=/opt/eclipse/eclipse
 Icon=/opt/eclipse/eclipse.png
 Type=Application
