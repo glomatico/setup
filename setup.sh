@@ -10,7 +10,7 @@ wget https://download.bell-sw.com/java/17.0.3.1+2/bellsoft-jdk17.0.3.1+2-linux-a
 apt install ./bellsoft-jdk17.0.3.1+2-linux-amd64-full.deb
 
 #Google Chrome Guest
-wget https://glomatico.neocities.org/chrome.txt" -O "/usr/share/applications/google-chrome.desktop
+wget https://raw.githubusercontent.com/glomatico/setup/main/google-chrome.desktop -O /usr/share/applications/google-chrome.desktop
 
 #VirtualBox
 apt install virtualbox
