@@ -28,13 +28,13 @@ sudo apt install -y libreoffice
 wget https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2022-03/R/eclipse-java-2022-03-R-linux-gtk-x86_64.tar.gz
 tar -zxvf eclipse-java-2022-03-R-linux-gtk-x86_64.tar.gz -C /opt/
 wget https://dl2.macupdate.com/images/icons128/11662.png -O /opt/eclipse/eclipse.png
-wget https://raw.githubusercontent.com/glomatico/setup/main/eclipse.desktop -O /usr/share/applications/eclipse.desktop
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/eclipse.desktop -O /usr/share/applications/eclipse.desktop
 
 #brModelo
 sudo mkdir /opt/brmodelo
 sudo wget https://github.com/chcandido/brModelo/releases/download/3.31/brModelo.jar -O /opt/brmodelo/brmodelo.jar
 sudo wget https://github.com/chcandido/brModelo/raw/master/src/imagens/icone.png -O /opt/brmodelo/brmodelo.png
-wget https://raw.githubusercontent.com/glomatico/setup/main/brmodelo.desktop -O /usr/share/applications/brmodelo.desktop
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/brmodelo.desktop -O /usr/share/applications/brmodelo.desktop
 
 #PyCharm
 sudo snap install pycharm-community --classic
