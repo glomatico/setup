@@ -56,3 +56,6 @@ sudo snap install code --classic
 
 #Postman
 sudo snap install postman
+
+#Aluno Info
+sudo useradd alunoinfo
