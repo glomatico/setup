@@ -65,3 +65,9 @@ echo 'alunoinfo' | sudo passwd --stdin alunoinfo
 echo 'alunoinfo' | sudo -S -u alunoinfo 'gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false'
 echo 'alunoinfo' | sudo -S -u alunoinfo 'gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false'
 echo 'alunoinfo' | sudo -S -u alunoinfo 'gsettings set org.gnome.shell.extensions.dash-to-dock show-favorites false'
+
+#Remove gnome-initial-setup
+sudo apt remove -y gnome-initial-setup
+
+#Poweroff
+sudo poweroff
