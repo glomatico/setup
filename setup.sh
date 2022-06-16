@@ -63,9 +63,9 @@ sudo useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo 'alunoinfo' | sudo passwd --stdin alunoinfo
 
 #Dock setup
-echo 'alunoinfo' | sudo -S -u alunoinfo 'gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false'
-echo 'alunoinfo' | sudo -S -u alunoinfo 'gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false'
-echo 'alunoinfo' | sudo -S -u alunoinfo 'gsettings set org.gnome.shell.extensions.dash-to-dock show-favorites false'
+echo alunoinfo | sudo -S -u alunoinfo gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
+echo alunoinfo | sudo -S -u alunoinfo gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
+echo alunoinfo | sudo -S -u alunoinfo gsettings set org.gnome.shell favorite-apps  "['google-chrome.desktop', 'eclipse.desktop']"
 
 #Remove gnome-initial-setup
 sudo apt remove -y gnome-initial-setup
