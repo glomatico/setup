@@ -25,9 +25,6 @@ sudo apt install -y vlc
 #Thonny
 sudo apt install -y thonny
 
-#Libre Office
-sudo apt install -y libreoffice
-
 #Eclipse
 wget https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2022-06/R/eclipse-java-2022-06-R-linux-gtk-x86_64.tar.gz
 sudo tar -zxvf eclipse-java-2022-06-R-linux-gtk-x86_64.tar.gz -C /opt/
