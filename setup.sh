@@ -69,5 +69,8 @@ echo 'alunoinfo' | sudo -S -u alunoinfo 'gsettings set org.gnome.shell.extension
 #Remove gnome-initial-setup
 sudo apt remove -y gnome-initial-setup
 
+#Upgrade
+sudo apt upgrade -y
+
 #Poweroff
 sudo poweroff
