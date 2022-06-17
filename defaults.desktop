@@ -1,0 +1,4 @@
+[Desktop Entry]
+Exec=/usr/local/bin/defaults.sh
+Terminal=true
+Type=Application
