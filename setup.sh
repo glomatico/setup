@@ -67,6 +67,7 @@ sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaults.sh -O 
 sudo chmod +x /usr/local/bin/defaults.sh
 sudo mkdir -p /home/alunoinfo/.config/autostart
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaults.desktop -O /home/alunoinfo/.config/autostart/defaults.desktop
+sudo chmod +x /home/alunoinfo/.config/autostart/defaults.desktop
 
 #Remove gnome-initial-setup
 sudo apt remove -y gnome-initial-setup
