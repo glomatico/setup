@@ -63,12 +63,8 @@ sudo useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo "alunoinfo:alunoinfo" | sudo chpasswd
 
 #Defaults Service
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaults.service -O /etc/systemd/system/defaults.service 
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaults.sh -O /usr/local/bin/defaults.sh
-sudo chmod +x /usr/local/bin/defaults.sh
-sudo systemctl enable defaults.service
-sudo systemctl daemon-reload
-sudo systemctl start defaults.service
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaults.sh -O /home/alunoinfo/.config/autostart/defaults.sh
+sudo chmod +x /home/alunoinfo/.config/autostart/defaults.sh
 
 #Remove gnome-initial-setup
 sudo apt remove -y gnome-initial-setup
