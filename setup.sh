@@ -62,11 +62,13 @@ sudo snap install postman
 sudo useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo "alunoinfo:alunoinfo" | sudo chpasswd
 
-#Dock Setup
-gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
-gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
-gsettings set org.gnome.shell favorite-apps "['google-chrome.desktop', 'eclipse.desktop']"
-sudo cp ~/.config/dconf/user /home/alunoinfo/.config/dconf/user 
+#Defaults Service
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaults.service -O /etc/systemd/system/defaults.service 
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaults.sh -O /usr/local/bin/defaults.sh
+sudo chmod +x /usr/local/bin/defaults.sh
+sudo systemctl enable defaults.service
+sudo systemctl daemon-reload
+sudo systemctl start defaults.service
 
 #Remove gnome-initial-setup
 sudo apt remove -y gnome-initial-setup
