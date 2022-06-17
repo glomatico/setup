@@ -9,9 +9,9 @@ sudo apt install -y ./google-chrome-stable_current_amd64.deb
 wget https://download.bell-sw.com/java/17.0.3.1+2/bellsoft-jdk17.0.3.1+2-linux-amd64-full.deb
 sudo apt install -y ./bellsoft-jdk17.0.3.1+2-linux-amd64-full.deb
 
-#FreeOffice
-wget https://www.softmaker.net/down/softmaker-freeoffice-2021_1046-01_amd64.deb
-sudo apt install -y ./softmaker-freeoffice-2021_1046-01_amd64.deb
+#WPS Office
+wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11664/wps-office_11.1.0.11664.XA_amd64.deb
+sudo apt install -y ./wps-office_11.1.0.11664.XA_amd64.deb
 
 #Google Chrome Guest
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/google-chrome.desktop -O /usr/share/applications/google-chrome.desktop
