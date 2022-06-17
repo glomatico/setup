@@ -72,7 +72,7 @@ sudo apt remove -y gnome-initial-setup
 #Upgrade
 sudo apt upgrade -y
 
-#Usermod
+#Usermod Thonny
 sudo usermod -a -G dialout alunoinfo
 
 #Poweroff
