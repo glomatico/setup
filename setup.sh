@@ -66,7 +66,7 @@ echo "alunoinfo:alunoinfo" | sudo chpasswd
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaults.sh -O /usr/local/bin/defaults.sh
 sudo chmod +x /usr/local/bin/defaults.sh
 sudo -u alunoinfo mkdir -p /home/alunoinfo/.config/autostart
-sudo -u alunoinfo wget https://raw.githubusercontent.com/glomatico/setup/main/defaults.desktop -O /home/alunoinfo/.config/autostart/defaults.desktop
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaults.desktop -O /home/alunoinfo/.config/autostart/defaults.desktop
 sudo chmod +x /home/alunoinfo/.config/autostart/defaults.desktop
 
 #Remove gnome-initial-setup
