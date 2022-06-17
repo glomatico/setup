@@ -74,5 +74,8 @@ sudo apt remove -y gnome-initial-setup
 #Upgrade
 sudo apt upgrade -y
 
+#Usermod
+sudo usermod -a -G dialout alunoinfo
+
 #Poweroff
 sudo poweroff
