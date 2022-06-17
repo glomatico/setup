@@ -1,0 +1,6 @@
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/defaults.sh
+
+[Install]
+WantedBy=multi-user.target
