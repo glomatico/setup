@@ -68,8 +68,8 @@ sudo -u alunoinfo mkdir -p /home/alunoinfo/.config/autostart
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaults.desktop -O /home/alunoinfo/.config/autostart/defaults.desktop
 sudo chmod +x /home/alunoinfo/.config/autostart/defaults.desktop
 
-#Remove gnome-initial-setup
-sudo apt remove -y gnome-initial-setup
+#Remove Packages
+sudo apt remove -y gnome-initial-setup gnome-startup-applications
 
 #Upgrade
 sudo apt upgrade -y
