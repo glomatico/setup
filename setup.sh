@@ -78,7 +78,7 @@ sudo apt upgrade -y
 sudo usermod -a -G dialout alunoinfo
 
 #Apt Post Script
-sudo echo 'DPkg::Post-Invoke {"sudo wget https://raw.githubusercontent.com/glomatico/setup/main/google-chrome.desktop -O /usr/share/applications/google-chrome.desktop";};' >> /etc/apt/apt.conf
+echo 'DPkg::Post-Invoke {"sudo wget https://raw.githubusercontent.com/glomatico/setup/main/google-chrome.desktop -O /usr/share/applications/google-chrome.desktop";};' | sudo tee -a /etc/apt/apt.conf > /dev/null
 
 #Poweroff
 sudo poweroff
