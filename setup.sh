@@ -9,11 +9,11 @@ sudo apt install -y ./google-chrome-stable_current_amd64.deb
 wget https://download.bell-sw.com/java/17.0.3.1+2/bellsoft-jdk17.0.3.1+2-linux-amd64-full.deb
 sudo apt install -y ./bellsoft-jdk17.0.3.1+2-linux-amd64-full.deb
 
-#LibreOffice
-sudo apt install -y libreoffice
-
 #Google Chrome Guest
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/google-chrome.desktop -O /usr/share/applications/google-chrome.desktop
+
+#LibreOffice
+sudo apt install -y libreoffice
 
 #VirtualBox
 sudo apt install -y virtualbox
