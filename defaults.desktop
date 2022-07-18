@@ -1,4 +1,4 @@
 [Desktop Entry]
-Exec=/home/ubuntu/.config/autostart/defaults.sh
+Exec=/home/alunoinfo/.config/autostart/defaults.sh
 Terminal=false
 Type=Application
