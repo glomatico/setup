@@ -1,4 +1,4 @@
 [Desktop Entry]
-Exec=/home/alunoinfo/.config/autostart/defaults.sh
+Exec=dconf reset -f / && dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'br')]"
 Terminal=false
 Type=Application
