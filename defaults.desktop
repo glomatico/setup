@@ -1,4 +1,4 @@
 [Desktop Entry]
-Exec=/usr/local/bin/defaults.sh
+Exec=/home/ubuntu/.config/autostart/defaults.sh
 Terminal=false
 Type=Application
