@@ -1,4 +1,10 @@
 [Desktop Entry]
-Exec=dconf reset -f / && dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'br')]"
-Terminal=false
 Type=Application
+Exec=sh -c "dconf reset -f / && dconf write /org/gnome/desktop/input-sources/sources \"[('xkb', 'br')]\""
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=dconf
+Name=dconf
+Comment[en_US]=oi kimberly
+Comment=oi kimberly
