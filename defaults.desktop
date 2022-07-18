@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=sh -c "dconf reset -f / && dconf write /org/gnome/desktop/input-sources/sources \"[('xkb', 'br')]\""
+Exec=sh -c "dconf reset -f / && dconf write /org/gnome/desktop/input-sources/sources \"[('xkb', 'br')]\" && amixer -D pulse sset Master 0%"
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
