@@ -2,6 +2,6 @@
 Version=1.0
 Name=brModelo
 Exec=java -jar /home/alunoinfo/brModelo.jar
-Icon=/home/alunoinfo/brmodelo.png
+Icon=/home/alunoinfo/brModelo.png
 Type=Application
 Categories=Application
