@@ -61,6 +61,10 @@ sudo snap install postman
 sudo useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo "alunoinfo:alunoinfo" | sudo chpasswd
 
+#Wallpaper
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/ifsulwallpaper.png -O /home/alunoinfo/ifsulwallpaper.png
+sudo chattr +i /home/alunoinfo/ifsulwallpaper.png
+
 #Defaults
 sudo -u alunoinfo mkdir -p /home/alunoinfo/.config/autostart
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsfs.desktop -O /home/alunoinfo/.config/autostart/defaultsfs.desktop
