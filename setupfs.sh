@@ -73,7 +73,7 @@ echo "alunoinfo:alunoinfo" | sudo chpasswd
 sudo -u alunoinfo mkdir -p /home/alunoinfo/snap
 sudo -u alunoinfo wget https://raw.githubusercontent.com/glomatico/setup/main/firefox.tar.gz -O /home/alunoinfo/snap/firefox.tar.gz
 sudo -u alunoinfo sh -c "cd /home/alunoinfo/snap && tar -xvf firefox.tar.gz --one-top-level"
-sudo rm home/alunoinfo/snap/firefox.tar.gz
+sudo rm /home/alunoinfo/snap/firefox.tar.gz
 
 #Defaults
 sudo -u alunoinfo mkdir -p /home/alunoinfo/.config/autostart
