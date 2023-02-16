@@ -2,11 +2,7 @@
 sudo apt update
 
 #Java
-wget https://download.bell-sw.com/java/17.0.3.1+2/bellsoft-jdk17.0.3.1+2-linux-amd64-full.deb
-sudo apt install -y ./bellsoft-jdk17.0.3.1+2-linux-amd64-full.deb
-
-#Google Chrome Guest
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/google-chrome.desktop -O /usr/share/applications/google-chrome.desktop
+sudo apt install -y openjdk-17-jdk openjdk-17-jre
 
 #LibreOffice
 sudo apt install -y libreoffice
@@ -20,9 +16,20 @@ sudo apt install -y vlc
 #Thonny
 sudo apt install -y thonny
 
+#Git
+sudo apt install -y git
+
+#Curl
+sudo apt install -y curl
+
+#SSH Server
+sudo apt install -y openssh-server
+sudo systemctl enable ssh
+sudo systemctl start ssh
+
 #Eclipse
-wget https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2022-06/R/eclipse-java-2022-06-R-linux-gtk-x86_64.tar.gz
-sudo tar -zxvf eclipse-java-2022-06-R-linux-gtk-x86_64.tar.gz -C /opt/
+wget https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2022-12/R/eclipse-java-2022-12-R-linux-gtk-x86_64.tar.gz
+sudo tar -zxvf eclipse-java-2022-12-R-linux-gtk-x86_64.tar.gz -C /opt/
 sudo wget https://www.eclipse.org/downloads/assets/public/images/logo-eclipse.png -O /opt/eclipse/eclipse.png
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/eclipse.desktop -O /usr/share/applications/eclipse.desktop
 
@@ -62,12 +69,15 @@ sudo snap install postman
 sudo useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo "alunoinfo:alunoinfo" | sudo chpasswd
 
-#Hide ifsul User
-sudo usermod -u 999 ifsul
+#Firefox profile
+sudo -u alunoinfo mkdir -p /home/alunoinfo/snap
+sudo -u alunoinfo wget https://raw.githubusercontent.com/glomatico/setup/main/firefox.tar.gz -O /home/alunoinfo/snap/firefox.tar.gz
+sudo -u alunoinfo sh -c "cd /home/alunoinfo/snap && tar -xvf firefox.tar.gz --one-top-level"
+sudo rm home/alunoinfo/snap/firefox.tar.gz
 
 #Defaults
 sudo -u alunoinfo mkdir -p /home/alunoinfo/.config/autostart
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsfs.desktop -O /home/alunoinfo/.config/autostart/defaultsfs.desktop
+sudo -u alunoinfo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsfs.desktop -O /home/alunoinfo/.config/autostart/defaultsfs.desktop
 sudo chattr +i /home/alunoinfo/.config/autostart/defaultsfs.desktop
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsfs -O /usr/bin/defaultsfs
 sudo chmod +x /usr/bin/defaultsfs
