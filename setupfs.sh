@@ -1,10 +1,6 @@
 #Update
 sudo apt update
 
-#Google Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install -y ./google-chrome-stable_current_amd64.deb
-
 #Java
 wget https://download.bell-sw.com/java/17.0.3.1+2/bellsoft-jdk17.0.3.1+2-linux-amd64-full.deb
 sudo apt install -y ./bellsoft-jdk17.0.3.1+2-linux-amd64-full.deb
@@ -45,8 +41,13 @@ sudo snap install intellij-idea-community --classic
 #NetBeans
 sudo snap install netbeans --classic
 
-#MySQL Workbench
+#MySQL
+sudo apt install -y mysql-server
+sudo systemctl enable mysql
+sudo systemctl start mysql
+sudo mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'alunoinfo';"
 sudo snap install mysql-workbench-community
+sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
 
 #Android Studio
 sudo snap install android-studio --classic
@@ -60,6 +61,9 @@ sudo snap install postman
 #Create alunoinfo User
 sudo useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo "alunoinfo:alunoinfo" | sudo chpasswd
+
+#Hide ifsul User
+sudo usermod -u 999 ifsul
 
 #Defaults
 sudo -u alunoinfo mkdir -p /home/alunoinfo/.config/autostart
@@ -76,9 +80,6 @@ sudo apt upgrade -y
 
 #Usermod Thonny
 sudo usermod -a -G dialout alunoinfo
-
-#Apt Post Script
-echo 'DPkg::Post-Invoke {"sudo wget https://raw.githubusercontent.com/glomatico/setup/main/google-chrome.desktop -O /usr/share/applications/google-chrome.desktop";};' | sudo tee -a /etc/apt/apt.conf > /dev/null
 
 #Poweroff
 sudo poweroff
