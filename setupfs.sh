@@ -85,11 +85,11 @@ sudo chmod +x /usr/bin/defaultsfs
 #Remove Packages
 sudo apt remove -y gnome-initial-setup gnome-startup-applications
 
-#Upgrade
-sudo apt upgrade -y
-
 #Usermod Thonny
 sudo usermod -a -G dialout alunoinfo
+
+#Upgrade
+sudo apt upgrade -y
 
 #Poweroff
 sudo poweroff
