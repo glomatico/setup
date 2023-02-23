@@ -22,6 +22,9 @@ sudo apt install -y git
 #Curl
 sudo apt install -y curl
 
+#Nettools
+sudo apt install -y net-tools
+
 #SSH Server
 sudo apt install -y openssh-server
 sudo systemctl enable ssh
@@ -89,6 +92,7 @@ sudo apt remove -y gnome-initial-setup gnome-startup-applications
 sudo usermod -a -G dialout alunoinfo
 
 #Upgrade
+sudo snap refresh firefox
 sudo apt upgrade -y
 
 #Poweroff
