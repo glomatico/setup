@@ -81,7 +81,7 @@ sudo rm /home/alunoinfo/snap/firefox.tar.gz
 #Defaults
 sudo -u alunoinfo mkdir -p /home/alunoinfo/.config/autostart
 sudo -u alunoinfo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsfs.desktop -O /home/alunoinfo/.config/autostart/defaultsfs.desktop
-sudo chattr +i /home/alunoinfo/.config/autostart/defaultsfs.desktop
+sudo chmod -R a-w /home/alunoinfo/.config/autostart
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsfs -O /usr/bin/defaultsfs
 sudo chmod +x /usr/bin/defaultsfs
 
