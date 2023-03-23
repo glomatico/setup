@@ -73,6 +73,7 @@ sudo useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo "alunoinfo:alunoinfo" | sudo chpasswd
 
 #Firefox profile
+sudo snap refresh firefox
 sudo -u alunoinfo mkdir -p /home/alunoinfo/snap
 sudo -u alunoinfo wget https://raw.githubusercontent.com/glomatico/setup/main/firefox.tar.gz -O /home/alunoinfo/snap/firefox.tar.gz
 sudo -u alunoinfo sh -c "cd /home/alunoinfo/snap && tar -xvf firefox.tar.gz --one-top-level"
@@ -93,7 +94,6 @@ sudo apt remove -y gnome-initial-setup gnome-startup-applications
 sudo usermod -a -G dialout alunoinfo
 
 #Upgrade
-sudo snap refresh firefox
 sudo apt upgrade -y
 
 #Poweroff
