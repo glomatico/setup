@@ -94,12 +94,13 @@ sudo apt install -y openfoam2212-default
 
 #Docker
 curl -fsSL get.docker.com | sudo bash
+sudo usermod -aG docker alunoinfo
 
 #Remove Packages
 sudo apt remove -y gnome-initial-setup gnome-startup-applications
 
 #Usermod Thonny
-sudo usermod -a -G dialout alunoinfo
+sudo usermod -aG dialout alunoinfo
 
 #Upgrade
 sudo apt upgrade -y
