@@ -67,6 +67,10 @@ sudo snap install code --classic
 #Postman
 sudo snap install postman
 
+#OpenFOAM
+curl -s https://dl.openfoam.com/add-debian-repo.sh | sudo bash
+sudo apt install -y openfoam2212-default
+
 #Create alunoinfo User
 sudo useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo "alunoinfo:alunoinfo" | sudo chpasswd
@@ -90,10 +94,6 @@ sudo chmod +x /usr/bin/defaultsfs
 sudo apt install -y thonny
 sudo usermod -aG dialout alunoinfo
 
-#OpenFOAM
-curl -s https://dl.openfoam.com/add-debian-repo.sh | sudo bash
-sudo apt install -y openfoam2212-default
-
 #Docker
 curl -fsSL get.docker.com | sudo bash
 sudo usermod -aG docker alunoinfo
@@ -103,6 +103,13 @@ sudo apt remove -y gnome-initial-setup gnome-startup-applications
 
 #Upgrade
 sudo apt upgrade -y
+
+#Swapfile
+sudo fallocate -l 8G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 
 #Poweroff
 sudo poweroff
