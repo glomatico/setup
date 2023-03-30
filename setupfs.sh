@@ -12,9 +12,11 @@ sudo apt install -y virtualbox
 
 #VLC
 sudo apt install -y vlc
+sudo apt remove -y totem
 
 #Thonny
 sudo apt install -y thonny
+sudo usermod -aG dialout alunoinfo
 
 #Git
 sudo apt install -y git
@@ -98,9 +100,6 @@ sudo usermod -aG docker alunoinfo
 
 #Remove Packages
 sudo apt remove -y gnome-initial-setup gnome-startup-applications
-
-#Usermod Thonny
-sudo usermod -aG dialout alunoinfo
 
 #Upgrade
 sudo apt upgrade -y
