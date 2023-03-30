@@ -14,10 +14,6 @@ sudo apt install -y virtualbox
 sudo apt install -y vlc
 sudo apt remove -y totem
 
-#Thonny
-sudo apt install -y thonny
-sudo usermod -aG dialout alunoinfo
-
 #Git
 sudo apt install -y git
 
@@ -89,6 +85,10 @@ sudo chown -R root:root /home/alunoinfo/.config/autostart
 sudo chmod -R a-w /home/alunoinfo/.config/autostart
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsfs -O /usr/bin/defaultsfs
 sudo chmod +x /usr/bin/defaultsfs
+
+#Thonny
+sudo apt install -y thonny
+sudo usermod -aG dialout alunoinfo
 
 #OpenFOAM
 curl -s https://dl.openfoam.com/add-debian-repo.sh | sudo bash
