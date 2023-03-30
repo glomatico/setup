@@ -87,6 +87,13 @@ sudo chmod -R a-w /home/alunoinfo/.config/autostart
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsfs -O /usr/bin/defaultsfs
 sudo chmod +x /usr/bin/defaultsfs
 
+#OpenFOAM
+curl -s https://dl.openfoam.com/add-debian-repo.sh | sudo bash
+sudo apt install -y openfoam2212-default
+
+#Docker
+curl -fsSL get.docker.com | sudo bash
+
 #Remove Packages
 sudo apt remove -y gnome-initial-setup gnome-startup-applications
 
