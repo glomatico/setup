@@ -58,6 +58,9 @@ sudo mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_passwo
 sudo snap install mysql-workbench-community
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
 
+#Apache PHP
+sudo apt install -y apachephp libapache2-mod-php php-mysql
+
 #Android Studio
 sudo snap install android-studio --classic
 
@@ -75,6 +78,10 @@ sudo apt install -y openfoam2212-default
 sudo useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo "alunoinfo:alunoinfo" | sudo chpasswd
 
+#Apache alunoinfo permissions
+sudo chown -R alunoinfo:alunoinfo /var/www/html
+sudo chmod 755 -R /var/www/html
+
 #Firefox profile
 sudo snap refresh firefox
 sudo -u alunoinfo mkdir -p /home/alunoinfo/snap
@@ -84,11 +91,11 @@ sudo rm /home/alunoinfo/snap/firefox.tar.gz
 
 #Defaults
 sudo -u alunoinfo mkdir -p /home/alunoinfo/.config/autostart
-sudo -u alunoinfo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsfs.desktop -O /home/alunoinfo/.config/autostart/defaultsfs.desktop
+sudo -u alunoinfo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.desktop -O /home/alunoinfo/.config/autostart/defaultsifsul.desktop
 sudo chown -R root:root /home/alunoinfo/.config/autostart
 sudo chmod -R a-w /home/alunoinfo/.config/autostart
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsfs -O /usr/bin/defaultsfs
-sudo chmod +x /usr/bin/defaultsfs
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul -O /usr/bin/defaultsifsul
+sudo chmod +x /usr/bin/defaultsifsul
 
 #Thonny
 sudo apt install -y thonny
