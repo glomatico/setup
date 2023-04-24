@@ -1,6 +1,11 @@
 #Update
 sudo apt update
 
+#Packet Tracer
+wget "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBckxoaWdIcFRTOWdnYzAwNkhzQ2F1R3RUcGtBTWc/root/content" -O CiscoPacketTracer_821_Ubuntu_64bit.deb
+sudo apt install -y ./CiscoPacketTracer_821_Ubuntu_64bit.deb
+rm CiscoPacketTracer_821_Ubuntu_64bit.deb
+
 #Java
 sudo apt install -y openjdk-17-jdk openjdk-17-jre
 
@@ -27,6 +32,9 @@ sudo apt install -y net-tools
 sudo apt install -y openssh-server
 sudo systemctl enable ssh
 sudo systemctl start ssh
+
+#SSH Pass
+sudo apt install -y sshpass
 
 #Eclipse
 wget https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2023-03/R/eclipse-java-2023-03-R-linux-gtk-x86_64.tar.gz
@@ -59,7 +67,10 @@ sudo snap install mysql-workbench-community
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
 
 #Apache PHP
-sudo apt install -y apachephp libapache2-mod-php php-mysql
+sudo apt install -y apache2 apachephp libapache2-mod-php php-mysql
+
+#NodeJS
+sudo apt install -y nodejs npm
 
 #Android Studio
 sudo snap install android-studio --classic
