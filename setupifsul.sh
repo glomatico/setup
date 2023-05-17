@@ -36,6 +36,9 @@ sudo systemctl start ssh
 #SSH Pass
 sudo apt install -y sshpass
 
+#SSH AllowUser
+echo "AllowUsers ifsul" | sudo tee -a /etc/ssh/sshd_config
+
 #Eclipse
 wget https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2023-03/R/eclipse-java-2023-03-R-linux-gtk-x86_64.tar.gz
 sudo tar -zxvf eclipse-java-2023-03-R-linux-gtk-x86_64.tar.gz -C /opt/
@@ -68,9 +71,6 @@ sudo snap connect mysql-workbench-community:password-manager-service :password-m
 
 #Apache PHP
 sudo apt install -y apache2 apachephp libapache2-mod-php php-mysql
-
-#SSH AllowUser
-echo "AllowUsers ifsul" | sudo tee -a /etc/ssh/sshd_config
 
 #NodeJS
 sudo snap install node --classic
