@@ -122,12 +122,5 @@ sudo apt remove -y gnome-initial-setup gnome-startup-applications
 #Upgrade
 sudo apt upgrade -y
 
-#Swapfile
-sudo fallocate -l 8G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
-echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
-
 #Poweroff
 sudo poweroff
