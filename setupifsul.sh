@@ -30,8 +30,7 @@ sudo apt install -y net-tools
 
 #SSH Server
 sudo apt install -y openssh-server
-sudo systemctl enable ssh
-sudo systemctl start ssh
+sudo systemctl enable ssh --now
 
 #SSH Pass
 sudo apt install -y sshpass
