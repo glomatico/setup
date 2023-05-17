@@ -62,8 +62,7 @@ sudo snap install netbeans --classic
 
 #MySQL
 sudo apt install -y mysql-server
-sudo systemctl enable mysql
-sudo systemctl start mysql
+sudo systemctl enable mysql --now
 sudo mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'alunoinfo';"
 sudo snap install mysql-workbench-community
 sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
