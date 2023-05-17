@@ -2,7 +2,7 @@
 sudo apt update
 
 #Packet Tracer
-wget "https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBckxoaWdIcFRTOWdnYzAwNkhzQ2F1R3RUcGtBTWc/root/content" -O CiscoPacketTracer_821_Ubuntu_64bit.deb
+wget 'https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBckxoaWdIcFRTOWdnYzAwNkhzQ2F1R3RUcGtBTWc/root/content' -O CiscoPacketTracer_821_Ubuntu_64bit.deb
 sudo apt install -y ./CiscoPacketTracer_821_Ubuntu_64bit.deb
 rm CiscoPacketTracer_821_Ubuntu_64bit.deb
 
@@ -70,7 +70,7 @@ sudo snap connect mysql-workbench-community:password-manager-service :password-m
 sudo apt install -y apache2 apachephp libapache2-mod-php php-mysql
 
 #NodeJS
-sudo apt install -y nodejs npm
+sudo snap install node --classic
 
 #Android Studio
 sudo snap install android-studio --classic
