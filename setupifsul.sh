@@ -69,6 +69,9 @@ sudo snap connect mysql-workbench-community:password-manager-service :password-m
 #Apache PHP
 sudo apt install -y apache2 apachephp libapache2-mod-php php-mysql
 
+#SSH AllowUser
+echo "AllowUsers ifsul" | sudo tee -a /etc/ssh/sshd_config
+
 #NodeJS
 sudo snap install node --classic
 
