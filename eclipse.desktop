@@ -2,6 +2,6 @@
 Version=1.0
 Name=Eclipse
 Exec=/opt/eclipse/eclipse
-Icon=/opt/eclipse/eclipse.png
+Icon=/opt/eclipse/icon.xps
 Type=Application
 Categories=Application
