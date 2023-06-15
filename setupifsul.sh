@@ -113,7 +113,7 @@ sudo chmod +x /usr/bin/defaultsifsul
 
 #Block ~/.bashrc
 sudo -u alunoinfo touch /home/alunoinfo/.bashrc
-sudo chown -R root:root /home/alunoinfo/.bashrc
+sudo chown root:root /home/alunoinfo/.bashrc
 sudo chmod a-w /home/alunoinfo/.bashrc
 
 #Thonny
