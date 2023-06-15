@@ -116,6 +116,9 @@ sudo -u alunoinfo touch /home/alunoinfo/.bashrc
 sudo chown root:root /home/alunoinfo/.bashrc
 sudo chmod a-w /home/alunoinfo/.bashrc
 
+#Wallpaper
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/ifsulwallpaper.png -O /usr/share/backgrounds/ifsul.png
+
 #Thonny
 sudo apt install -y thonny
 sudo usermod -aG dialout alunoinfo
