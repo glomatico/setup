@@ -42,10 +42,10 @@ sudo apt install -y sshpass
 echo "AllowUsers ifsul" | sudo tee -a /etc/ssh/sshd_config
 
 #Eclipse
-wget https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2023-03/R/eclipse-java-2023-03-R-linux-gtk-x86_64.tar.gz
-sudo tar -zxvf eclipse-java-2023-03-R-linux-gtk-x86_64.tar.gz -C /opt/
+wget https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2023-06/R/eclipse-java-2023-06-R-linux-gtk-x86_64.tar.gz
+sudo tar -zxvf eclipse-java-2023-06-R-linux-gtk-x86_64.tar.gz -C /opt/
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/eclipse.desktop -O /usr/share/applications/eclipse.desktop
-rm eclipse-java-2023-03-R-linux-gtk-x86_64.tar.gz
+rm eclipse-java-2023-06-R-linux-gtk-x86_64.tar.gz
 
 #brModelo
 sudo mkdir /opt/brmodelo
