@@ -111,6 +111,11 @@ sudo chmod -R a-w /home/alunoinfo/.config/autostart
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul -O /usr/bin/defaultsifsul
 sudo chmod +x /usr/bin/defaultsifsul
 
+#Block ~/.bashrc
+sudo -u alunoinfo touch /home/alunoinfo/.bashrc
+sudo chown -R root:root /home/alunoinfo/.bashrc
+sudo chmod a-w /home/alunoinfo/.bashrc
+
 #Thonny
 sudo apt install -y thonny
 sudo usermod -aG dialout alunoinfo
