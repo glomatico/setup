@@ -2,6 +2,6 @@
 Version=1.0
 Name=brModelo
 Exec=java -jar /opt/brmodelo/brmodelo.jar
-Icon=/opt/brmodelo/brmodelo.png
+Icon=/opt/brmodelo/icon.png
 Type=Application
 Categories=Application
