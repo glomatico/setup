@@ -125,7 +125,7 @@ curl -fsSL get.docker.com | sudo bash
 sudo usermod -aG docker alunoinfo
 
 #Remove Packages
-sudo apt remove -y gnome-initial-setup gnome-startup-applications
+sudo apt remove -y gnome-initial-setup gnome-startup-applications gnome-online-accounts
 
 #Upgrade
 sudo apt upgrade -y
