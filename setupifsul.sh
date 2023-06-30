@@ -106,10 +106,6 @@ sudo rm /home/alunoinfo/snap/firefox.tar.gz
 #Defaults
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.sh -O /etc/profile.d
 
-#Block ~/.bashrc
-sudo chown root:root /home/alunoinfo/.bashrc
-sudo chmod a-w /home/alunoinfo/.bashrc
-
 #Wallpaper
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/ifsulwallpaper.png -O /usr/share/backgrounds/ifsul.png
 
