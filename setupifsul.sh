@@ -104,12 +104,7 @@ sudo -u alunoinfo sh -c "cd /home/alunoinfo/snap && tar -xvf firefox.tar.gz --on
 sudo rm /home/alunoinfo/snap/firefox.tar.gz
 
 #Defaults
-sudo -u alunoinfo mkdir -p /home/alunoinfo/.config/autostart
-sudo -u alunoinfo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.desktop -O /home/alunoinfo/.config/autostart/defaultsifsul.desktop
-sudo chown -R root:root /home/alunoinfo/.config/autostart
-sudo chmod -R a-w /home/alunoinfo/.config/autostart
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul -O /usr/bin/defaultsifsul
-sudo chmod +x /usr/bin/defaultsifsul
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.sh -O /etc/profile.d
 
 #Block ~/.bashrc
 sudo chown root:root /home/alunoinfo/.bashrc
