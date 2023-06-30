@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Name=brModelo
-Exec=java -jar /opt/brmodelo/brmodelo.jar
+Exec=/usr/bin/java -jar /opt/brmodelo/brmodelo.jar
 Icon=/opt/brmodelo/icon.png
 Type=Application
 Categories=Application
