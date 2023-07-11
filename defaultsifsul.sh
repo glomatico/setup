@@ -1,4 +1,4 @@
-if [ "$(id -un)" != "alunoinfo" ]; then
+if [ "$(/usr/bin/id -un)" != "alunoinfo" ]; then
     return
 fi
 
