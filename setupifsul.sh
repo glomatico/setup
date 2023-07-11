@@ -41,17 +41,14 @@ sudo apt install -y sshpass
 #SSH AllowUser
 echo "AllowUsers ifsul" | sudo tee -a /etc/ssh/sshd_config
 
-#Eclipse
-wget https://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/2023-06/R/eclipse-java-2023-06-R-linux-gtk-x86_64.tar.gz
-sudo tar -zxvf eclipse-java-2023-06-R-linux-gtk-x86_64.tar.gz -C /opt/
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/eclipse.desktop -O /usr/share/applications/eclipse.desktop
-rm eclipse-java-2023-06-R-linux-gtk-x86_64.tar.gz
-
 #brModelo
 sudo mkdir /opt/brmodelo
 sudo wget https://github.com/chcandido/brModelo/releases/download/3.31/brModelo.jar -O /opt/brmodelo/brmodelo.jar
 sudo wget https://github.com/chcandido/brModelo/raw/master/src/imagens/icone.png -O /opt/brmodelo/icon.png
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/brmodelo.desktop -O /usr/share/applications/brmodelo.desktop
+
+#Eclipse
+sudo snap install eclipse --classic
 
 #PyCharm
 sudo snap install pycharm-community --classic
@@ -104,7 +101,7 @@ sudo -u alunoinfo sh -c "cd /home/alunoinfo/snap && tar -xvf firefox.tar.gz --on
 sudo rm /home/alunoinfo/snap/firefox.tar.gz
 
 #Defaults
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.sh -O /etc/profile.d
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.sh -O /etc/profile.d/defaultsifsul.sh
 
 #Wallpaper
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/ifsulwallpaper.png -O /usr/share/backgrounds/ifsul.png
