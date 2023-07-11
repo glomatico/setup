@@ -1,4 +1,11 @@
+if [ "$(id -un)" != "alunoinfo" ]; then
+    return
+fi
+
 /bin/cp /etc/skel/.bashrc ~/
+rm -rf ~/Desktop/*
+rm -rf ~/Documents/*
+rm -rf ~/Downloads/*
 dconf reset -f /
 dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'br')]"
 dconf write /org/gnome/shell/favorite-apps "['firefox_firefox.desktop', 'eclipse.desktop', 'org.gnome.Nautilus.desktop']"
