@@ -3,6 +3,7 @@ if [ "$(id -un)" != "alunoinfo" ]; then
 fi
 
 /bin/cp /etc/skel/.bashrc ~/
+rm -rf ~/.config/autostart
 rm -rf ~/Desktop/*
 rm -rf ~/Documents/*
 rm -rf ~/Downloads/*
