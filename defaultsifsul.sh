@@ -7,6 +7,7 @@ rm -rf ~/.config/autostart
 rm -rf ~/Desktop/*
 rm -rf ~/Documents/*
 rm -rf ~/Downloads/*
+rm -rf ~/eclipse-workspace
 dconf reset -f /
 dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'br')]"
 dconf write /org/gnome/shell/favorite-apps "['firefox_firefox.desktop', 'eclipse.desktop', 'org.gnome.Nautilus.desktop']"
