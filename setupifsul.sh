@@ -38,9 +38,6 @@ sudo systemctl enable ssh --now
 #SSH Pass
 sudo apt install -y sshpass
 
-#SSH AllowUser
-echo "AllowUsers ifsul" | sudo tee -a /etc/ssh/sshd_config
-
 #brModelo
 sudo mkdir /opt/brmodelo
 sudo wget https://github.com/chcandido/brModelo/releases/download/3.31/brModelo.jar -O /opt/brmodelo/brmodelo.jar
