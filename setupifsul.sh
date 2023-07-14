@@ -89,6 +89,10 @@ sudo apt install -y openfoam2212-default
 sudo useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo "alunoinfo:alunoinfo" | sudo chpasswd
 
+#SSH Key
+sudo mkdir -p /home/alunoinfo/.ssh
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/id_rsa.pub /home/alunoinfo/.ssh/authorized_keys
+
 #Apache alunoinfo permissions
 sudo chown -R alunoinfo:alunoinfo /var/www/html
 sudo chmod 755 -R /var/www/html
