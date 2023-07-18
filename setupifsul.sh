@@ -86,6 +86,11 @@ sudo apt install -y openfoam2212-default
 sudo useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo "alunoinfo:alunoinfo" | sudo chpasswd
 
+#Firefox Desktop
+sudo -u alunoinfo mkdir -p /home/alunoinfo/.local/share
+sudo mkdir /home/alunoinfo/.local/share/applications
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/firefox_firefox.desktop -O /home/alunoinfo/.local/share/applications/firefox_firefox.desktop
+
 #SSH Key
 sudo mkdir -p /home/alunoinfo/.ssh
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/id_rsa.pub /home/alunoinfo/.ssh/authorized_keys
@@ -96,13 +101,6 @@ echo PasswordAuthentication no | sudo tee -a /etc/ssh/sshd_config
 #Apache alunoinfo permissions
 sudo chown -R alunoinfo:alunoinfo /var/www/html
 sudo chmod 755 -R /var/www/html
-
-#Firefox profile
-sudo snap refresh firefox
-sudo -u alunoinfo mkdir -p /home/alunoinfo/snap
-sudo -u alunoinfo wget https://raw.githubusercontent.com/glomatico/setup/main/firefox.tar.gz -O /home/alunoinfo/snap/firefox.tar.gz
-sudo -u alunoinfo sh -c "cd /home/alunoinfo/snap && tar -xvf firefox.tar.gz --one-top-level"
-sudo rm /home/alunoinfo/snap/firefox.tar.gz
 
 #Defaults
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.sh -O /etc/profile.d/defaultsifsul.sh
