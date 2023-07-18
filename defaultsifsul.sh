@@ -9,6 +9,7 @@ rm -rf ~/Documents/*
 rm -rf ~/Downloads/*
 rm -rf ~/eclipse-workspace
 rm -rf ~/snap/eclipse
+rm -rf ~/snap/firefox
 dconf reset -f /
 dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'br')]"
 dconf write /org/gnome/shell/favorite-apps "['firefox_firefox.desktop', 'eclipse_eclipse.desktop', 'org.gnome.Nautilus.desktop']"
