@@ -38,6 +38,9 @@ sudo systemctl enable ssh --now
 #SSH Pass
 sudo apt install -y sshpass
 
+#Nmap
+sudo apt install -y nmap
+
 #brModelo
 sudo mkdir /opt/brmodelo
 sudo wget https://github.com/chcandido/brModelo/releases/download/3.31/brModelo.jar -O /opt/brmodelo/brmodelo.jar
