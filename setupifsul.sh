@@ -109,7 +109,7 @@ sudo chmod 755 -R /var/www/html
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.sh -O /etc/profile.d/defaultsifsul.sh
 
 #Wallpaper
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/ifsulwallpaper.png -O /usr/share/backgrounds/ifsul.png
+sudo wget https://raw.githubusercontent.com/glomatico/setup/main/ifsul.png -O /usr/share/backgrounds/ifsul.png
 
 #Thonny
 sudo apt install -y thonny

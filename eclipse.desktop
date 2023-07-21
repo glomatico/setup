@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Eclipse
-Exec=/opt/eclipse/eclipse
-Icon=/opt/eclipse/icon.xpm
-Type=Application
-Categories=Application
