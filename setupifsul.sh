@@ -95,7 +95,7 @@ sudo mkdir /home/alunoinfo/.local/share/applications
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/firefox_firefox.desktop -O /home/alunoinfo/.local/share/applications/firefox_firefox.desktop
 
 #SSH Key
-sudo mkdir -p /home/alunoinfo/.ssh
+sudo mkdir /home/alunoinfo/.ssh
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/id_rsa.pub /home/alunoinfo/.ssh/authorized_keys
 
 #SSH PasswordAuthentication no
