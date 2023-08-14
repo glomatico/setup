@@ -43,9 +43,6 @@ sudo wget https://raw.githubusercontent.com/glomatico/setup/main/ifsul.png -O /u
 #Defaults
 sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.sh -O /etc/profile.d/defaultsifsul.sh
 
-#SSHPass
-sudo apt install -y sshpass
-
 #Remove alunoinfo from docker group
 sudo deluser alunoinfo docker
 
