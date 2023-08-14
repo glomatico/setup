@@ -59,3 +59,11 @@ sudo wget https://raw.githubusercontent.com/glomatico/setup/main/firefox_firefox
 
 #Remove Firefox profile
 sudo rm -rf /home/alunoinfo/snap/firefox
+
+#Hostname
+echo Hostname:
+read hostname
+echo $hostname | sudo tee /etc/hostname
+
+#Reboot
+sudo reboot
