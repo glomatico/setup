@@ -1,66 +1,66 @@
 #Change root password
-sudo passwd root
+passwd root
 
 #Mount Windows Partition
-sudo ntfsfix /dev/sda2
-sudo mkdir /media/ifsul/win
-sudo mount -o rw -t ntfs /dev/sda2 /media/ifsul/win
+ntfsfix /dev/sda2
+mkdir /mnt/win
+mount -o rw -t ntfs /dev/sda2 /mnt/win
 
 #Remove Laragon
-sudo rm -rf "/media/ifsul/win/ProgramData/Microsoft/Windows/Start Menu/Programs/Laragon"
-sudo rm -rf "/media/ifsul/win/laragon"
-sudo rm -rf "/media/ifsul/win/Users/Public/Desktop/Laragon.lnk"
+rm -rf "/mnt/win/ProgramData/Microsoft/Windows/Start Menu/Programs/Laragon"
+rm -rf "/mnt/win/laragon"
+rm "/mnt/win/Users/Public/Desktop/Laragon.lnk"
 
 #Create bat file on desktop
-echo "irm https://massgrave.dev/get | iex" | sudo tee /media/ifsul/win/Users/Administrador/Desktop/ativador.ps1
+echo "irm https://massgrave.dev/get | iex" | tee /mnt/win/Users/Administrador/Desktop/ativador.ps1
 
 #Update
-sudo apt update
+apt update
 
 #Remove eclipse
-sudo rm -rf /opt/eclipse
+rm -rf /opt/eclipse
 
 #Install eclipse snap
-sudo snap install eclipse --classic
+snap install eclipse --classic
 
 #Remove autostart
-sudo rm -rf /home/alunoinfo/.config/autostart
+rm -rf /home/alunoinfo/.config/autostart
 
 #SSH key ifsul
-mkdir ~/.ssh
-wget https://raw.githubusercontent.com/glomatico/setup/main/id_rsa.pub -O ~/.ssh/authorized_keys
+sudo -u ifsul mkdir /home/ifsul/.ssh
+sudo -u ifsul wget https://raw.githubusercontent.com/glomatico/setup/main/id_rsa.pub -O /home/ifsul/.ssh/authorized_keys
 
 #SSH key ifsul alunoinfo
-sudo mkdir /home/alunoinfo/.ssh
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/id_rsa.pub -O /home/alunoinfo/.ssh/authorized_keys
+mkdir /home/alunoinfo/.ssh
+wget https://raw.githubusercontent.com/glomatico/setup/main/id_rsa.pub -O /home/alunoinfo/.ssh/authorized_keys
 
 #SSH PasswordAuthentication no
-echo PasswordAuthentication no | sudo tee -a /etc/ssh/sshd_config
+echo PasswordAuthentication no | tee -a /etc/ssh/sshd_config
 
 #Ifsul background
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/ifsul.png -O /usr/share/backgrounds/ifsul.png
+wget https://raw.githubusercontent.com/glomatico/setup/main/ifsul.png -O /usr/share/backgrounds/ifsul.png
 
 #Defaults
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.sh -O /etc/profile.d/defaultsifsul.sh
+wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.sh -O /etc/profile.d/defaultsifsul.sh
 
 #Remove alunoinfo from docker group
-sudo deluser alunoinfo docker
+deluser alunoinfo docker
 
 #Upgrade
-sudo apt upgrade -y
+apt upgrade -y
 
 #Firefox desktop
 sudo -u alunoinfo mkdir -p /home/alunoinfo/.local/share
-sudo mkdir /home/alunoinfo/.local/share/applications
-sudo wget https://raw.githubusercontent.com/glomatico/setup/main/firefox_firefox.desktop -O /home/alunoinfo/.local/share/applications/firefox_firefox.desktop
+mkdir /home/alunoinfo/.local/share/applications
+wget https://raw.githubusercontent.com/glomatico/setup/main/firefox_firefox.desktop -O /home/alunoinfo/.local/share/applications/firefox_firefox.desktop
 
 #Remove Firefox profile
-sudo rm -rf /home/alunoinfo/snap/firefox
+rm -rf /home/alunoinfo/snap/firefox
 
 #Hostname
 echo Hostname:
 read hostname
-echo $hostname | sudo tee /etc/hostname
+echo $hostname | tee /etc/hostname
 
 #Reboot
-sudo reboot
+reboot
