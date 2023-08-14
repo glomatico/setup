@@ -1,6 +1,15 @@
 #Change root password
 sudo passwd root
 
+#Mount Windows Partition
+sudo mkdir /media/ifsul/win
+sudo mount -t ntfs /dev/sda2 /media/ifsul/win
+
+#Remove Laragon
+sudo rm -rf "/media/ifsul/win/ProgramData/Microsoft/Windows/Start Menu/Programs/Laragon"
+sudo rm -rf "/media/ifsul/win/laragon"
+sudo rm -rf "/media/ifsul/win/Users/Public/Desktop/Laragon.lnk"
+
 #Update
 sudo apt update
 
