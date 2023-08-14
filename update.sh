@@ -2,8 +2,9 @@
 sudo passwd root
 
 #Mount Windows Partition
+sudo ntfsfix /dev/sda2
 sudo mkdir /media/ifsul/win
-sudo mount -t ntfs /dev/sda2 /media/ifsul/win
+sudo mount -o rw -t ntfs /dev/sda2 /media/ifsul/win
 
 #Remove Laragon
 sudo rm -rf "/media/ifsul/win/ProgramData/Microsoft/Windows/Start Menu/Programs/Laragon"
@@ -11,7 +12,7 @@ sudo rm -rf "/media/ifsul/win/laragon"
 sudo rm -rf "/media/ifsul/win/Users/Public/Desktop/Laragon.lnk"
 
 #Create bat file on desktop
-echo "irm https://massgrave.dev/get | iex" | tee /media/ifsul/win/Users/Administrador/Desktop/ativador.ps1
+echo "irm https://massgrave.dev/get | iex" | sudo tee /media/ifsul/win/Users/Administrador/Desktop/ativador.ps1
 
 #Update
 sudo apt update
