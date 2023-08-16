@@ -128,5 +128,8 @@ sudo apt remove -y gnome-initial-setup gnome-startup-applications
 #Upgrade
 sudo apt upgrade -y
 
+#Make Ifsul system account
+echo -e "[User]\nSystemAccount=true" | sudo tee -a /var/lib/AccountsService/users/ifsul
+
 #Poweroff
 sudo poweroff
