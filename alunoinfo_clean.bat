@@ -6,6 +6,9 @@ for /d %%p in ("%userprofile%\Downloads\*") do rmdir "%%p" /s /q
 del /q "%userprofile%\Desktop\*"
 for /d %%p in ("%userprofile%\Desktop\*") do rmdir "%%p" /s /q
 
+:: Remove all files and folders from Recycle Bin
+rmdir /s /q "%userprofile%\Recycle Bin"
+
 :: Remove Roblox
 rmdir /s /q "%localappdata%\Roblox"
 rmdir /s /q "%appdata%\Microsoft\Windows\Start Menu\Programs\Roblox"
