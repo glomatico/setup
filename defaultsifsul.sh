@@ -7,8 +7,6 @@ rm -rf ~/.config/autostart
 rm -rf ~/Desktop/*
 rm -rf ~/Documents/*
 rm -rf ~/Downloads/*
-rm -rf ~/eclipse-workspace
-rm -rf ~/snap/eclipse
 rm -rf ~/snap/firefox
 dconf reset -f /
 dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'br')]"
