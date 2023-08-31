@@ -12,6 +12,3 @@ rmdir /s /q "C:\$Recycle.Bin"
 :: Remove Roblox
 rmdir /s /q "%localappdata%\Roblox"
 rmdir /s /q "%appdata%\Microsoft\Windows\Start Menu\Programs\Roblox"
-
-:: Remove Google Chrome user data
-rmdir /s /q "%localappdata%\Google\Chrome\User Data"
