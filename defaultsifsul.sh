@@ -1,6 +1,9 @@
 if [ "$(/usr/bin/id -un)" != "alunoinfo" ]; then
     return
 fi
+if [ "$XDG_CURRENT_DESKTOP" != "ubuntu:GNOME" ]; then
+    return
+fi
 
 /bin/cp /etc/skel/.bashrc ~/
 rm -rf ~/.config/autostart
