@@ -124,8 +124,8 @@ apt upgrade -y
 #Hide User ifsul
 echo -e "[User]\nSystemAccount=true" | tee -a /var/lib/AccountsService/users/ifsul
 
-#Add shutdown to crontab
-echo "0 0 * * * root /sbin/poweroff" | tee -a /etc/crontab
+#Add shutdown to alunoinfo's crontab
+echo "0 0 * * * root /sbin/poweroff" | tee -a /var/spool/cron/crontabs/alunoinfo
 
 #Poweroff
 poweroff
