@@ -27,7 +27,7 @@ apt install -y \
     libapache2-mod-php \
     php-mysql \
     thonny \
-    traceroute \
+    traceroute
 
 #Remove Packages
 apt remove -y \
@@ -102,9 +102,8 @@ wget https://raw.githubusercontent.com/glomatico/setup/main/id_rsa.pub -O /home/
 mkdir -p /root/.ssh
 wget https://raw.githubusercontent.com/glomatico/setup/main/id_rsa.pub -O /root/.ssh/authorized_keys
 
-#Apache alunoinfo permissions
-chown -R alunoinfo:alunoinfo /var/www/html
-chmod 755 -R /var/www/html
+#Apache permissions
+chmod 777 -R /var/www/html
 
 #Defaults
 wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.sh -O /etc/profile.d/defaultsifsul.sh
