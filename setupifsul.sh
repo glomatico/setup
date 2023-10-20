@@ -40,10 +40,6 @@ wget https://github.com/chcandido/brModelo/releases/download/3.31/brModelo.jar -
 wget https://github.com/chcandido/brModelo/raw/master/src/imagens/icone.png -O /opt/brmodelo/icon.png
 wget https://raw.githubusercontent.com/glomatico/setup/main/brmodelo.desktop -O /usr/share/applications/brmodelo.desktop
 
-#OpenFOAM
-curl -s https://dl.openfoam.com/add-debian-repo.sh | bash
-apt install -y openfoam2212-default
-
 #Docker
 curl -fsSL get.docker.com | bash
 
