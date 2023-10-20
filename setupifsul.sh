@@ -23,7 +23,7 @@ apt install -y \
     nmap \
     mysql-server \
     apache2 \
-    apachephp \
+    php \
     libapache2-mod-php \
     php-mysql \
     thonny \
