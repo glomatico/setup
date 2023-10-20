@@ -26,7 +26,8 @@ apt install -y \
     apachephp \
     libapache2-mod-php \
     php-mysql \
-    thonny
+    thonny \
+    traceroute \
 
 #Remove Packages
 apt remove -y \
