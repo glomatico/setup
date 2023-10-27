@@ -10,7 +10,11 @@ rm -rf ~/.config/autostart
 rm -rf ~/Desktop/*
 rm -rf ~/Documents/*
 rm -rf ~/Downloads/*
+rm -rf ~/Music/*
 rm -rf ~/Pictures/*
+rm -rf ~/Public/*
+rm -rf ~/Templates/*
+rm -rf ~/Videos/*
 rm -rf ~/snap/firefox
 rm -rf ~/.local/share/Trash/*
 dconf reset -f /
