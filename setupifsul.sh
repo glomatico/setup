@@ -129,8 +129,5 @@ apt upgrade -y
 #Hide User ifsul
 echo -e "[User]\nSystemAccount=true" | tee -a /var/lib/AccountsService/users/ifsul
 
-#Shutdown crontab alunoinfo
-echo "0 23 * * * root /usr/bin/pgrep -u alunoinfo > /dev/null && /sbin/poweroff" | tee -a /etc/crontab
-
 #Poweroff
 poweroff
