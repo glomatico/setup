@@ -15,7 +15,7 @@ rm -rf ~/snap/firefox
 rm -rf ~/.local/share/Trash/*
 dconf reset -f /
 dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'br')]"
-dconf write /org/gnome/shell/favorite-apps "['firefox_firefox.desktop', 'eclipse_eclipse.desktop', 'org.gnome.Nautilus.desktop']"
+dconf write /org/gnome/shell/favorite-apps "@as []"
 dconf write /org/gnome/shell/extensions/dash-to-dock/show-trash false
 dconf write /org/gnome/shell/extensions/dash-to-dock/show-mounts false
 dconf write /org/gnome/desktop/sound/event-sounds false
