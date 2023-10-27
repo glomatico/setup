@@ -9,6 +9,12 @@ wget 'https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBckxoaWd
 apt install -y ./CiscoPacketTracer_821_Ubuntu_64bit.deb
 rm CiscoPacketTracer_821_Ubuntu_64bit.deb
 
+#Spring Tool Suite
+wget "https://download.springsource.com/release/STS4/4.20.0.RELEASE/dist/e4.29/spring-tool-suite-4-4.20.0.RELEASE-e4.29.0-linux.gtk.x86_64.tar.gz"
+tar -xvf spring-tool-suite-4-4.20.0.RELEASE-e4.29.0-linux.gtk.x86_64.tar.gz -C /opt/
+rm spring-tool-suite-4-4.20.0.RELEASE-e4.29.0-linux.gtk.x86_64.tar.gz
+wget https://raw.githubusercontent.com/glomatico/setup/main/SpringToolSuite4.desktop -O /usr/share/applications/SpringToolSuite4.desktop
+
 #Install packages
 apt install -y \
     openjdk-17-jdk \
