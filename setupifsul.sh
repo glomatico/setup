@@ -105,9 +105,6 @@ wget https://raw.githubusercontent.com/glomatico/setup/main/defaultsifsul.sh -O 
 #Wallpaper
 wget https://raw.githubusercontent.com/glomatico/setup/main/ifsul.png -O /usr/share/backgrounds/ifsul.png
 
-#Usermod dialout alunoinfo
-usermod -aG dialout alunoinfo
-
 #Upgrade
 apt upgrade -y
 
