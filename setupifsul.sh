@@ -72,7 +72,7 @@ echo PermitRootLogin without-password | tee -a /etc/ssh/sshd_config
 
 #MySQL config
 systemctl enable mysql --now
-mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'alunoinfo';"
+mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';"
 snap connect mysql-workbench-community:password-manager-service :password-manager-service
 
 #Create alunoinfo User
