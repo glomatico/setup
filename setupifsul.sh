@@ -50,20 +50,8 @@ wget https://github.com/chcandido/brModelo/releases/download/3.31/brModelo.jar -
 wget https://github.com/chcandido/brModelo/raw/master/src/imagens/icone.png -O /opt/brmodelo/icon.png
 wget https://raw.githubusercontent.com/glomatico/setup/main/brmodelo.desktop -O /usr/share/applications/brmodelo.desktop
 
-#Docker
-curl -fsSL get.docker.com | bash
-
 #Eclipse
 snap install eclipse --classic
-
-#PyCharm
-snap install pycharm-community --classic
-
-#IntelliJ IDEA
-snap install intellij-idea-community --classic
-
-#NetBeans
-snap install netbeans --classic
 
 #NodeJS
 snap install node --classic
@@ -73,9 +61,6 @@ snap install android-studio --classic
 
 #Visual Studio Code
 snap install code --classic
-
-#Postman
-snap install postman
 
 #MySQL Workbench
 snap install mysql-workbench-community
