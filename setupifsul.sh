@@ -39,7 +39,7 @@ apt install -y \
     traceroute
 
 #Remove Packages
-apt remove -y \
+apt auto-remove -y \
     gnome-initial-setup \
     gnome-startup-applications \
     totem
