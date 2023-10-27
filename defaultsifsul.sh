@@ -22,3 +22,5 @@ dconf write /org/gnome/desktop/interface/enable-animations false
 dconf write /org/gnome/desktop/interface/gtk-theme '"Yaru-olive"'
 dconf write /org/gnome/desktop/interface/icon-theme '"Yaru-olive"'
 dconf write /org/gnome/desktop/background/picture-uri '"/usr/share/backgrounds/ifsul.png"'
+dconf write /org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-timeout 3600
+dconf write /org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type "'suspend'"
