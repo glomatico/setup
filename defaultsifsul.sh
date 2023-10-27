@@ -12,6 +12,7 @@ rm -rf ~/Documents/*
 rm -rf ~/Downloads/*
 rm -rf ~/Pictures/*
 rm -rf ~/snap/firefox
+rm -rf ~/.local/share/Trash/*
 dconf reset -f /
 dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'br')]"
 dconf write /org/gnome/shell/favorite-apps "['firefox_firefox.desktop', 'eclipse_eclipse.desktop', 'org.gnome.Nautilus.desktop']"
