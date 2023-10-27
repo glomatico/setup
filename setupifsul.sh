@@ -35,6 +35,7 @@ apt install -y \
     php \
     libapache2-mod-php \
     php-mysql \
+    python3-pip \
     traceroute
 
 #Remove Packages
