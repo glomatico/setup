@@ -7,7 +7,7 @@ fi
 
 /bin/cp /etc/skel/.bashrc ~/
 xdg-user-dirs-update --force
-rm -rf ~/.config/autostart
+rm -rf ~/.config/autostart/*
 rm -rf ~/Desktop/*
 rm -rf ~/Documents/*
 rm -rf ~/Downloads/*
