@@ -8,14 +8,14 @@ fi
 /bin/cp /etc/skel/.bashrc ~/
 xdg-user-dirs-update --force
 rm -rf ~/.config/autostart/*
-rm -rf $(xdg-user-dir DESKTOP)/*
-rm -rf $(xdg-user-dir DOCUMENTS)/*
-rm -rf $(xdg-user-dir DOWNLOAD)/*
-rm -rf $(xdg-user-dir MUSIC)/*
-rm -rf $(xdg-user-dir PICTURES)/*
-rm -rf $(xdg-user-dir PUBLICSHARE)/*
-rm -rf $(xdg-user-dir TEMPLATES)/*
-rm -rf $(xdg-user-dir VIDEOS)/*
+rm -rf "$(xdg-user-dir DESKTOP)"/*
+rm -rf "$(xdg-user-dir DOCUMENTS)"/*
+rm -rf "$(xdg-user-dir DOWNLOAD)"/*
+rm -rf "$(xdg-user-dir MUSIC)"/*
+rm -rf "$(xdg-user-dir PICTURES)"/*
+rm -rf "$(xdg-user-dir PUBLICSHARE)"/*
+rm -rf "$(xdg-user-dir TEMPLATES)"/*
+rm -rf "$(xdg-user-dir VIDEOS)"/*
 rm -rf ~/snap/firefox
 rm -rf ~/.local/share/Trash/*
 dconf reset -f /
