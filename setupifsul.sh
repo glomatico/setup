@@ -65,6 +65,9 @@ snap install code --classic
 #MySQL Workbench
 snap install mysql-workbench-community
 
+#Arduino IDE
+snap install arduino
+
 #SSH config
 systemctl enable ssh --now
 echo PasswordAuthentication no | tee -a /etc/ssh/sshd_config
@@ -110,6 +113,9 @@ apt upgrade -y
 
 #Hide User ifsul
 echo -e "[User]\nSystemAccount=true" | tee -a /var/lib/AccountsService/users/ifsul
+
+#Usermod alunoinfo dialout
+usermod -a -G dialout alunoinfo
 
 #Poweroff
 poweroff
