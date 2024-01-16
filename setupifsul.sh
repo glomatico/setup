@@ -10,10 +10,10 @@ apt install -y ./CiscoPacketTracer_821_Ubuntu_64bit.deb
 rm CiscoPacketTracer_821_Ubuntu_64bit.deb
 
 #Spring Tool Suite
-wget "https://download.springsource.com/release/STS4/4.20.0.RELEASE/dist/e4.29/spring-tool-suite-4-4.20.0.RELEASE-e4.29.0-linux.gtk.x86_64.tar.gz"
-tar -xvf spring-tool-suite-4-4.20.0.RELEASE-e4.29.0-linux.gtk.x86_64.tar.gz -C /opt/
-rm spring-tool-suite-4-4.20.0.RELEASE-e4.29.0-linux.gtk.x86_64.tar.gz
-wget https://raw.githubusercontent.com/glomatico/setup/main/sts-4.20.0.RELEASE.desktop -O /usr/share/applications/sts-4.20.0.RELEASE.desktop
+wget "https://cdn.spring.io/spring-tools/release/STS4/4.21.0.RELEASE/dist/e4.30/spring-tool-suite-4-4.21.0.RELEASE-e4.30.0-linux.gtk.x86_64.tar.gz"
+tar -xvf spring-tool-suite-4-4.21.0.RELEASE-e4.30.0-linux.gtk.x86_64.tar.gz -C /opt/
+rm spring-tool-suite-4-4.21.0.RELEASE-e4.30.0-linux.gtk.x86_64.tar.gz
+wget https://raw.githubusercontent.com/glomatico/setup/main/sts-4.21.0.RELEASE.desktop -O /usr/share/applications/sts-4.21.0.RELEASE.desktop
 
 #JDK 21
 wget "https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb"
