@@ -111,3 +111,6 @@ echo -e "[User]\nSystemAccount=true" | tee -a /var/lib/AccountsService/users/ifs
 
 #Usermod alunoinfo dialout
 usermod -a -G dialout alunoinfo
+
+#Usermod ifsul dialout
+usermod -a -G dialout ifsul
