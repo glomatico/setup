@@ -87,15 +87,10 @@ sudo -u alunoinfo mkdir -p /home/alunoinfo/.local/share
 mkdir /home/alunoinfo/.local/share/applications
 wget https://raw.githubusercontent.com/glomatico/setup/main/firefox_firefox.desktop -O /home/alunoinfo/.local/share/applications/firefox_firefox.desktop
 
-#SSH Key Ifsul
-sudo -u ifsul mkdir -p /home/ifsul/.ssh
-sudo -u ifsul wget https://raw.githubusercontent.com/glomatico/setup/main/id_rsa.pub -O /home/ifsul/.ssh/authorized_keys
+#Deny ssh users
+echo "DenyUsers alunoinfo ifsul" | sudo tee -a /etc/ssh/sshd_config
 
-#SSH Key Alunoinfo
-mkdir -p /home/alunoinfo/.ssh
-wget https://raw.githubusercontent.com/glomatico/setup/main/id_rsa.pub -O /home/alunoinfo/.ssh/authorized_keys
-
-#SSH Key Root
+#SSH Key
 mkdir -p /root/.ssh
 wget https://raw.githubusercontent.com/glomatico/setup/main/id_rsa.pub -O /root/.ssh/authorized_keys
 
