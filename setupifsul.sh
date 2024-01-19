@@ -87,8 +87,8 @@ sudo -u alunoinfo mkdir -p /home/alunoinfo/.local/share
 mkdir /home/alunoinfo/.local/share/applications
 wget https://raw.githubusercontent.com/glomatico/setup/main/firefox_firefox.desktop -O /home/alunoinfo/.local/share/applications/firefox_firefox.desktop
 
-#Deny ssh users
-echo "DenyUsers alunoinfo ifsul" | sudo tee -a /etc/ssh/sshd_config
+#Allow only root to SSH
+echo AllowUsers root | sudo tee -a /etc/ssh/sshd_config
 
 #SSH Key
 mkdir -p /root/.ssh
