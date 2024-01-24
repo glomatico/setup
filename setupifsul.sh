@@ -42,7 +42,8 @@ apt install -y \
 apt auto-remove -y \
     gnome-initial-setup \
     gnome-startup-applications \
-    totem
+    totem \
+    unattended-upgrades
 
 #brModelo
 mkdir /opt/brmodelo
