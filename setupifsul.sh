@@ -73,6 +73,7 @@ snap install arduino
 systemctl enable ssh --now
 echo PasswordAuthentication no | tee -a /etc/ssh/sshd_config
 echo PermitRootLogin without-password | tee -a /etc/ssh/sshd_config
+echo AllowUsers root | sudo tee -a /etc/ssh/sshd_config
 
 #MySQL config
 systemctl enable mysql --now
@@ -87,9 +88,6 @@ echo "alunoinfo:alunoinfo" | chpasswd
 sudo -u alunoinfo mkdir -p /home/alunoinfo/.local/share
 mkdir /home/alunoinfo/.local/share/applications
 wget https://raw.githubusercontent.com/glomatico/setup/main/firefox_firefox.desktop -O /home/alunoinfo/.local/share/applications/firefox_firefox.desktop
-
-#Allow only root to SSH
-echo AllowUsers root | sudo tee -a /etc/ssh/sshd_config
 
 #SSH Key
 mkdir -p /root/.ssh
