@@ -113,3 +113,10 @@ usermod -a -G dialout alunoinfo
 
 #Usermod ifsul dialout
 usermod -a -G dialout ifsul
+
+#Create swap file
+fallocate -l 20G /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+echo "/swapfile swap swap defaults 0 0" | tee -a /etc/fstab
