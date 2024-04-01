@@ -120,3 +120,6 @@ chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
 echo "/swapfile swap swap defaults 0 0" | tee -a /etc/fstab
+
+#Prevent alunoinfo from changing password
+chage -E -1 alunoinfo
