@@ -18,6 +18,7 @@ rm -rf "$(xdg-user-dir TEMPLATES)"/*
 rm -rf "$(xdg-user-dir VIDEOS)"/*
 rm -rf ~/snap/firefox
 rm -rf ~/.local/share/Trash/*
+rm -rf ~/.config/Code/User/settings.json
 dconf reset -f /
 dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'br')]"
 dconf write /org/gnome/shell/favorite-apps "@as []"
