@@ -5,9 +5,9 @@ passwd root
 apt update
 
 #Packet Tracer
-wget 'https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBckxoaWdIcFRTOWdnYzAwNkhzQ2F1R3RUcGtBTWc/root/content' -O CiscoPacketTracer_821_Ubuntu_64bit.deb
-apt install -y ./CiscoPacketTracer_821_Ubuntu_64bit.deb
-rm CiscoPacketTracer_821_Ubuntu_64bit.deb
+wget 'https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBckxoaWdIcFRTOWdnZVktMFBRanR2NzdIMUZKUkE/root/content' -O Packet_Tracer822_amd64_signed.deb
+apt install -y ./Packet_Tracer822_amd64_signed.deb
+rm Packet_Tracer822_amd64_signed.deb
 
 #Spring Tool Suite
 wget "https://cdn.spring.io/spring-tools/release/STS4/4.23.1.RELEASE/dist/e4.32/spring-tool-suite-4-4.23.1.RELEASE-e4.32.0-linux.gtk.x86_64.tar.gz"
