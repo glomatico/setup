@@ -13,7 +13,7 @@ rm CiscoPacketTracer_821_Ubuntu_64bit.deb
 wget "https://cdn.spring.io/spring-tools/release/STS4/4.23.1.RELEASE/dist/e4.32/spring-tool-suite-4-4.23.1.RELEASE-e4.32.0-linux.gtk.x86_64.tar.gz"
 tar -xvf spring-tool-suite-4-4.23.1.RELEASE-e4.32.0-linux.gtk.x86_64.tar.gz -C /opt/
 rm spring-tool-suite-4-4.23.1.RELEASE-e4.32.0-linux.gtk.x86_64.tar.gz
-wget https://raw.githubusercontent.com/glomatico/setup/main/sts-4.23.1.RELEASE -O /usr/share/applications/sts-4.23.1.RELEASE
+wget https://raw.githubusercontent.com/glomatico/setup/main/sts-4.23.1.RELEASE.desktop -O /usr/share/applications/sts-4.23.1.RELEASE.desktop
 
 #JDK 21
 wget "https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb"
