@@ -69,6 +69,9 @@ snap install mysql-workbench-community
 #Arduino IDE
 snap install arduino
 
+#Postman
+snap install postman
+
 #SSH config
 systemctl enable ssh --now
 echo PasswordAuthentication no | tee -a /etc/ssh/sshd_config
