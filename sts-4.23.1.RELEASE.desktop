@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Spring Tool Suite 4
-Exec=/opt/sts-4.23.1.RELEASE/SpringToolSuite4 %u
-Icon=/opt/sts-4.23.1.RELEASE/icon.xpm
-Type=Application
-MimeType=x-scheme-handler/eclipse+command;x-scheme-handler/eclipse+mpc;
