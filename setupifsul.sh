@@ -43,7 +43,9 @@ apt auto-remove -y \
     gnome-initial-setup \
     gnome-startup-applications \
     totem \
-    unattended-upgrades
+    unattended-upgrades \
+    apport \
+    apport-gtk
 
 #brModelo
 mkdir /opt/brmodelo
