@@ -75,6 +75,12 @@ snap install arduino
 #Postman
 snap install postman
 
+#Blender
+snap install blender --classic
+
+#Blockbench
+snap install blockbench-snapcraft
+
 #SSH config
 systemctl enable ssh --now
 echo PasswordAuthentication no | tee -a /etc/ssh/sshd_config
