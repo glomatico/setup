@@ -20,6 +20,16 @@ wget "https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.deb"
 apt install -y ./jdk-21_linux-x64_bin.deb
 rm jdk-21_linux-x64_bin.deb
 
+#Remove Packages
+apt auto-remove -y \
+    gnome-initial-setup \
+    gnome-startup-applications \
+    totem \
+    unattended-upgrades \
+    update-manager \
+    apport \
+    apport-gtk
+
 #Install packages
 apt install -y \
     libreoffice \
@@ -37,15 +47,6 @@ apt install -y \
     php-mysql \
     python3-pip \
     traceroute
-
-#Remove Packages
-apt auto-remove -y \
-    gnome-initial-setup \
-    gnome-startup-applications \
-    totem \
-    unattended-upgrades \
-    apport \
-    apport-gtk
 
 #brModelo
 mkdir /opt/brmodelo
