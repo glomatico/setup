@@ -5,7 +5,7 @@ passwd root
 apt update
 
 #Packet Tracer
-wget 'https://api.onedrive.com/v1.0/shares/u!aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBckxoaWdIcFRTOWdnZVktMFBRanR2NzdIMUZKUkE/root/content' -O Packet_Tracer822_amd64_signed.deb
+wget 'https://archive.org/download/packet-tracer-822-amd-64/Packet_Tracer822_amd64_signed.deb' -O Packet_Tracer822_amd64_signed.deb
 apt install -y ./Packet_Tracer822_amd64_signed.deb
 rm Packet_Tracer822_amd64_signed.deb
 
