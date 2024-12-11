@@ -38,6 +38,7 @@ apt auto-remove -y \
 
 #Install packages
 apt install -y \
+    uidmap \
     libreoffice \
     virtualbox \
     vlc \
