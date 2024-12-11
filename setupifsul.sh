@@ -126,6 +126,12 @@ apt upgrade -y
 #Hide User ifsul
 echo -e "[User]\nSystemAccount=true" | tee -a /var/lib/AccountsService/users/ifsul
 
+#Install Docker
+curl -fsSL get.docker.com | bash
+
+#Install rootless docker for alunoinfo
+sudo -u alunoinfo curl -fsSL  https://get.docker.com/rootless | bash
+
 #Usermod alunoinfo dialout
 usermod -a -G dialout alunoinfo
 
