@@ -135,8 +135,23 @@ echo -e "[User]\nSystemAccount=true" | tee -a /var/lib/AccountsService/users/ifs
 #Install Docker
 curl -fsSL get.docker.com | bash
 
+#Fix alunoinfo Docker permissions
+cat <<EOT | tee "/etc/apparmor.d/home.alunoinfo.bin.rootlesskit"
+# ref: https://ubuntu.com/blog/ubuntu-23-10-restricted-unprivileged-user-namespaces
+abi <abi/4.0>,
+include <tunables/global>
+
+/home/alunoinfo/bin/rootlesskit flags=(unconfined) {
+  userns,
+
+  # Site-specific additions and overrides. See local/README for details.
+  include if exists <local/home.alunoinfo.bin.rootlesskit>
+}
+EOT
+systemctl restart apparmor.service
+
 #Install rootless docker for alunoinfo
-sudo -u alunoinfo curl -fsSL https://get.docker.com/rootless | bash
+sudo -H -u alunoinfo bash -c 'curl -fsSL https://get.docker.com/rootless | bash'
 
 #Usermod alunoinfo dialout
 usermod -a -G dialout alunoinfo
