@@ -48,6 +48,9 @@ apt install -y \
     python3-pip \
     traceroute
 
+#Remove Snap Store
+snap remove snap-store
+
 #brModelo
 mkdir /opt/brmodelo
 wget https://github.com/chcandido/brModelo/releases/download/3.31/brModelo.jar -O /opt/brmodelo/brmodelo.jar
