@@ -100,7 +100,7 @@ useradd -s /bin/bash -d /home/alunoinfo -m alunoinfo
 echo "alunoinfo:alunoinfo" | chpasswd
 
 #Reset alunoinfo crontab job
-echo '@reboot echo "alunoinfo:alunoinfo" | chpasswd && usermod -c "alunoinfo" alunoinfo && rm -f /var/lib/AccountsService/icons/alunoinfo' | sudo crontab -
+echo '@reboot echo "alunoinfo:alunoinfo" | chpasswd && usermod -c "alunoinfo" alunoinfo && rm -f /var/lib/AccountsService/icons/alunoinfo' | crontab -
 
 #Firefox Desktop
 sudo -u alunoinfo mkdir -p /home/alunoinfo/.local/share
