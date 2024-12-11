@@ -153,6 +153,9 @@ systemctl restart apparmor.service
 #Install rootless docker for alunoinfo
 sudo -H -u alunoinfo bash -c 'curl -fsSL https://get.docker.com/rootless | bash'
 
+#Change owner of /home/alunoinfo/bin directory to root
+chown root:root -R /home/alunoinfo/bin
+
 #Usermod alunoinfo dialout
 usermod -a -G dialout alunoinfo
 
