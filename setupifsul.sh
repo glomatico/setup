@@ -91,6 +91,9 @@ snap install blender --classic
 #Blockbench
 snap install blockbench-snapcraft
 
+#IntelliJ IDEA Community Edition
+snap install intellij-idea-community --classic
+
 #SSH config
 systemctl enable ssh --now
 echo PasswordAuthentication no | tee -a /etc/ssh/sshd_config
