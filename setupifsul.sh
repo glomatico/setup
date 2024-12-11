@@ -16,9 +16,9 @@ apt install -y ./Packet_Tracer822_amd64_signed.deb
 rm Packet_Tracer822_amd64_signed.deb
 
 #Spring Tool Suite
-wget "https://cdn.spring.io/spring-tools/release/STS4/4.26.0.RELEASE/dist/e4.33/spring-tool-suite-4-4.26.0.RELEASE-e4.33.0-linux.gtk.x86_64.tar.gz"
-tar -xvf spring-tool-suite-4-4.26.0.RELEASE-e4.33.0-linux.gtk.x86_64.tar.gz -C /opt/
-rm spring-tool-suite-4-4.26.0.RELEASE-e4.33.0-linux.gtk.x86_64.tar.gz
+wget "https://cdn.spring.io/spring-tools/release/STS4/4.27.0.RELEASE/dist/e4.34/spring-tool-suite-4-4.27.0.RELEASE-e4.34.0-linux.gtk.x86_64.tar.gz"
+tar -xvf spring-tool-suite-4-4.27.0.RELEASE-e4.34.0-linux.gtk.x86_64.tar.gz -C /opt/
+rm spring-tool-suite-4-4.27.0.RELEASE-e4.34.0-linux.gtk.x86_64.tar.gz
 wget https://raw.githubusercontent.com/glomatico/setup/main/sts-4.26.0.RELEASE.desktop -O /usr/share/applications/sts-4.26.0.RELEASE.desktop
 
 #JDK 21
