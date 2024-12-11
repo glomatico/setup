@@ -4,6 +4,12 @@ passwd root
 #Update
 apt update
 
+#Packet Tracer Mesa Fix
+wget 'https://github.com/PetrusNoleto/Error-in-install-cisco-packet-tracer-in-ubuntu-23.10-unmet-dependencies/releases/download/CiscoPacketTracerFixUnmetDependenciesUbuntu23.10/libegl1-mesa_23.0.4-0ubuntu1.22.04.1_amd64.deb' -O libegl1-mesa_23.0.4-0ubuntu1.22.04.1_amd64.deb
+wget 'https://github.com/PetrusNoleto/Error-in-install-cisco-packet-tracer-in-ubuntu-23.10-unmet-dependencies/releases/download/CiscoPacketTracerFixUnmetDependenciesUbuntu23.10/libgl1-mesa-glx_23.0.4-0ubuntu1.22.04.1_amd64.deb' -O libgl1-mesa-glx_23.0.4-0ubuntu1.22.04.1_amd64.deb
+apt install -y ./libegl1-mesa_23.0.4-0ubuntu1.22.04.1_amd64.deb ./libgl1-mesa-glx_23.0.4-0ubuntu1.22.04.1_amd64.deb
+rm libegl1-mesa_23.0.4-0ubuntu1.22.04.1_amd64.deb libgl1-mesa-glx_23.0.4-0ubuntu1.22.04.1_amd64.deb
+
 #Packet Tracer
 wget 'https://archive.org/download/packet-tracer-822-amd-64/Packet_Tracer822_amd64_signed.deb' -O Packet_Tracer822_amd64_signed.deb
 apt install -y ./Packet_Tracer822_amd64_signed.deb
@@ -130,7 +136,7 @@ echo -e "[User]\nSystemAccount=true" | tee -a /var/lib/AccountsService/users/ifs
 curl -fsSL get.docker.com | bash
 
 #Install rootless docker for alunoinfo
-sudo -u alunoinfo curl -fsSL  https://get.docker.com/rootless | bash
+sudo -u alunoinfo curl -fsSL https://get.docker.com/rootless | bash
 
 #Usermod alunoinfo dialout
 usermod -a -G dialout alunoinfo
